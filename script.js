@@ -1,0 +1,16 @@
+$(document).ready(function(){
+    $("#signup-form").validate({
+        rules:{
+            fName:{
+                required:true
+            },
+            sName:{
+                required:true
+            },
+            emailOrPhone:{
+                required:true,
+                email:true
+            }
+        }
+    })
+})
